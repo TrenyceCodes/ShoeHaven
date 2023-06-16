@@ -1,0 +1,146 @@
+:root {
+    --primary-color: hsl(34, 44%, 69%);
+    --secondary-color: hsl(0, 0%, 100%);
+    --tertiary-color: hsl(0, 0%, 0%);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('./fonts/Montserrat.ttf');
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('./fonts/OpenSans.ttf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: OpenSans, sans-serif;
+    min-height: 100vh;
+}
+
+header nav {
+    display: flex;
+    padding: 10px;
+}
+
+header nav #pageTitle {
+    color: var(--primary-color);
+}
+
+header nav .navigation {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+header nav .navigation li {
+    margin-right: 10px;
+}
+
+header nav .navigation li a {
+    display: flex;
+    text-decoration: none;
+    color: var(--tertiary-color);
+}
+
+header nav .navigation .signInButton {
+    background-color: var(--primary-color);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+header nav .navigation .signInButton a {
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+.pageBanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 20px;
+    height: 200px;
+    color: var(--secondary-color);
+}
+
+.pageBanner h3,
+.pageBanner p,
+.pageBanner .learnMoreBtn {
+    margin-top: 10px;
+}
+
+.pageBanner h3 {
+    font-size: 35px;
+}
+
+.pageBanner p {
+    font-size: 25px;
+}
+
+.pageBanner .learnMoreBtn {
+    background-color: var(--secondary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.pageBanner .learnMoreBtn:hover {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.pageIcons {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    margin-left: 15%;
+}
+
+.pageIcons .shoesContainer > img {
+    width: 199px;
+    height: 249px;
+    border-radius: 15px;
+}
+
+.pageIcons .shoesContainer > img:hover {
+   opacity: 0.8;
+}
+
+.pageIcons .shoesContainer > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageIcons .shoesContainer > p:hover {
+    color: var(--primary-color);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 50px;
+    width: 75em;
+    bottom: 0em;
+    font-size: 20px;
+    font-weight: 100;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
